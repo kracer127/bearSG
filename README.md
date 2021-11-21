@@ -21,7 +21,7 @@
 
 ## # 0x02 界面展示
 
-![界面](\imgs\run.png)
+<img src=".\imgs\run.png" alt="operating" style="zoom:80%;" />
 
 
 
