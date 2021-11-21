@@ -98,8 +98,9 @@ public class getUserInput {
     // 函数：组合url和当前年份
     public static void processUrlAndYear() {
         List<String> urlList = new ArrayList<String>();
-        List<String> newArealUrl = List.copyOf(areaUrl);
-        for (String u : newArealUrl){
+        List<String> tmpUrl = new ArrayList<String>();
+        tmpUrl.addAll(areaUrl);
+        for (String u : tmpUrl){
             if(u.contains(".")){
                 urlList.add(u);
                 areaUrl.remove(u);
@@ -254,8 +255,9 @@ public class getUserInput {
             }
         }
         /* 去除超短超长的密码 */
-        List<String> newAllDict = List.copyOf(allDict);
-        for (String a : newAllDict){
+        List<String> tmp = new ArrayList<String>();
+        tmp.addAll(allDict);
+        for (String a : tmp){
             if ((a.length() < 6) || (a.length() > 16)){
                 allDict.remove(a);
             }

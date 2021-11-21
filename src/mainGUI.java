@@ -336,5 +336,6 @@ public class mainGUI extends JFrame {
         panel.setLayout(gl_panel);
         this.contentPane.setLayout(gl_contentPane);
     }
+
 }
 
